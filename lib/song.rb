@@ -12,7 +12,7 @@ class Song
     @@count += 1 
     add_genre
     
-      @@genres << genre
+      
     @@artists << artist 
   end 
   
