@@ -12,27 +12,8 @@ class Song
     @@count += 1 
     @@genres << genre
     @@artists << artist
-     # @@genres << genre
-    #end 
-    #if !(@@artist.include?(artist))
-    #  @@artists << artists 
-    #end 
-   # add_genre(genre)
-  #  add_artist(artist)
   end 
-  
- # def add_genre(genre)
-  #  if !(@@genres.include?(genre))
-  #    @@genres << genre
-  #  end 
-  #end 
-  
-#  def add_artist(artist)
- #   if !(@@artists.include?(artist))
-  #    @@artists << artist
-   # end 
-  #end
-  
+ 
   def self.count
     @@count
   end 
@@ -46,6 +27,12 @@ class Song
   end
   
   def self.genre_count
+    genre_hash = {}
+    @@genres.each |genre| do
+      if genre_hash.keys.include?(genre)
+        genre_hash[genre] 
+      
+    end 
     
   end 
   
