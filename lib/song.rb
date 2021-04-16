@@ -10,8 +10,8 @@ class Song
     @artist=(artist)
     @genre=(genre)
     @@count += 1 
-    add_genre
-    add_artist
+    add_genre(genre)
+    add_artist(artist)
   end 
   
   def add_genre(genre)
