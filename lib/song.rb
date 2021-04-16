@@ -21,7 +21,7 @@ class Song
       @@genres << genre
     end 
   end 
-  binding.pry 
+  
   def add_artist(artist)
     if !(@@artists.include?(artist))
       @@artists << artist
@@ -49,3 +49,5 @@ class Song
   end 
   
 end 
+
+binding.pry 
