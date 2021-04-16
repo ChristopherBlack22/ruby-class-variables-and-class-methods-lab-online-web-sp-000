@@ -31,8 +31,8 @@ class Song
     @@genres.each |genre| do
       if genre_hash.has_key?(genre)
         genre_hash[genre] += 1 
-      else
-        genre_hash{genre => 1}
+      #else
+       # genre_hash{genre => 1}
       end 
     end
     genre_hash
