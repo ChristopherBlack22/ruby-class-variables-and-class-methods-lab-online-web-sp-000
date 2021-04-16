@@ -13,7 +13,7 @@ class Song
     add_genre
     
       
-    @@artists << artist 
+     
   end 
   
   def add_genre(genre)
