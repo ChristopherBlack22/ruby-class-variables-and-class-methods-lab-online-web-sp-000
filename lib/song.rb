@@ -19,8 +19,11 @@ class Song
   def add_genre(genre)
     if !(@@genres.include?(genre))
       
-      
+      @@genres << genre
   end 
+  
+  def add_artist(artist)
+    
   
   def self.count
     @@count
