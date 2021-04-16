@@ -16,12 +16,14 @@ class Song
   
   def add_genre(genre)
     if !(@@genres.include?(genre))
-      
       @@genres << genre
+    end 
   end 
   
   def add_artist(artist)
-    @@artists << artist
+    if !(@@artists.include?(artist))
+      @@artists << artist
+    end 
   end
   
   
